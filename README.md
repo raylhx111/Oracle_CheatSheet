@@ -1,8 +1,7 @@
 # Oracle_CheatSheet
-Oracle Cheat Sheet
 
-# Check database usage (检查表空间)
 
+## Check database usage (检查表空间)
 ### 英文版
 ```
 SELECT d.tablespace_name "Name", d.status "Status", 
