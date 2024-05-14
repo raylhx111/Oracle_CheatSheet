@@ -1,4 +1,4 @@
-![image](https://github.com/raylhx111/Oracle_CheatSheet/assets/36726709/91884856-ca01-4628-a1cc-09a50b310cf6)# Oracle_CheatSheet
+# Oracle_CheatSheet
 Oracle Cheat Sheet
 
 #Check database usage (检查表空间)
