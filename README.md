@@ -1,8 +1,10 @@
 # Oracle_CheatSheet
 Oracle Cheat Sheet
 
-#Check database usage (检查表空间)
-#英文版
+# Check database usage (检查表空间)
+
+### 英文版
+```
 SELECT d.tablespace_name "Name", d.status "Status", 
        TO_CHAR (NVL (a.BYTES / 1024 / 1024, 0), '99,999,990.90') "Size (M)",
           TO_CHAR (NVL (a.BYTES - NVL (f.BYTES, 0), 0) / 1024 / 1024,
@@ -38,8 +40,10 @@ SELECT d.tablespace_name "Name", d.status "Status",
    AND d.extent_management LIKE 'LOCAL'
    AND d.CONTENTS LIKE 'TEMPORARY'
 order by 5 desc;
+```
 
-#中文版
+### 中文版
+```
 SELECT UPPER(F.TABLESPACE_NAME) "表空间名", 
 D.TOT_GROOTTE_MB "表空间大小(M)", 
 D.TOT_GROOTTE_MB - F.TOTAL_BYTES "已使用空间(M)", 
@@ -57,4 +61,5 @@ FROM SYS.DBA_DATA_FILES DD
 GROUP BY DD.TABLESPACE_NAME) D 
 WHERE D.TABLESPACE_NAME = F.TABLESPACE_NAME 
 ORDER BY 4 DESC;
+```
 
