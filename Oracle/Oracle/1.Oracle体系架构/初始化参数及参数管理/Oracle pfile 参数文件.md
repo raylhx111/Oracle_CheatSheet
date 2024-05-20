@@ -1,7 +1,7 @@
 ---
 share: "true"
 ---
-/pub
+
 # Oracle pfile 参数文件
 
 Oracle 数据库启动时，第一步开启到 nomount 状态，需要使用到参数文件。
