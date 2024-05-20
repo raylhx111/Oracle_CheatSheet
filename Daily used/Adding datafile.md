@@ -1,6 +1,6 @@
 # 方法一：添加数据文件。
 查询需要添加的表空间的数据文件：
-```
+```sql
 SELECT tablespace_name, file_name  FROM dba_data_files where tablespace_name ='[Table space name]' ORDER BY tablespace_name;
 ```
 添加表空间：
